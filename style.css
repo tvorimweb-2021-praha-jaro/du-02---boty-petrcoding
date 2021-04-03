@@ -5,6 +5,9 @@ html { box-sizing: border-box; }
 
 body {
     text-rendering: optimizeLegibility;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 /*
@@ -25,3 +28,140 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+h1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+body {
+    max-width: 100%;
+    height: auto;
+    margin: 100px;
+    background-color: #f5f5f5;
+}
+
+.zbozi {
+    height: 440px;
+    width: 670px;
+    border-radius: 15px; /*na obrázku v příkladu je 15-20px, 30px neodpovídá*/
+    position: relative;
+    display: flow-root;
+}
+
+.detaily {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    padding: 30px;
+    height: 100%;
+    background-color: white;
+    border-radius: 0 15px 15px 0;
+}
+
+.popis-zbozi {
+    border-bottom: 1px solid #06d7c1 ;
+}
+
+.produkt {
+    margin: 10px 0 25px;
+    color: #959595;
+}
+
+.popis {
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.popis-parametry {
+    padding: 30px 0;
+}
+
+.velikosti li {
+    display: inline;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+ul.velikosti {
+    padding-left: 0;
+}
+
+.parametr {
+    font-weight: 500;
+}
+
+.vybrana {
+    color: #f15f42;
+    border: solid 1px #f15f42;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.tlacitko {
+    text-decoration: none;
+}
+
+a.tlacitko {
+    padding: 10px 25px;
+    background-color: #f15f42;
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 30px;
+}
+
+
+/*zde začíná obrázek s botou*/
+
+.vizual {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    border-radius: 15px 0 0 15px;
+    position: relative;
+    background-color: #50cc49;
+    background-image: linear-gradient(#06d7c1,#50cc49);
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.slogan {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.cena {
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+}
+
+.zaruka {
+    font-size: 12px;
+    font-weight: 400px;
+    color: white;
+}
+
+.cenovka {
+    text-align: right;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+.bota {
+    position: absolute;
+    left: -80px;
+}
